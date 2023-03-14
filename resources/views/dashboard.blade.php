@@ -6,9 +6,21 @@
     </x-slot>
 
     <div class="py-12">
+        <style>
+            .blue-text{
+              display:hidden !important;
+            }
+          </style>
         <div class="max-w-7xl mx-auto sm:px-6 lg:px-8">
             <div class="bg-white overflow-hidden shadow-xl sm:rounded-lg">
-                <x-welcome />
+   @include('trading.first')
+   <hr>
+   @include('trading.second')
+<hr>
+@include('trading.third')
+<hr>
+@include('trading.crypto')
+   
             </div>
         </div>
     </div>
